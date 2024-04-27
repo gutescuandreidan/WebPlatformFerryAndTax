@@ -1,0 +1,15 @@
+body {
+  background-image: url("poze/podFetesti.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  margin: 0;
+  padding: 0;
+  height: 100%;
+}
+.bg-rgb {
+  background-color: #e6d197;
+}
+.container {
+  text-align: center;
+  background-color: #ffcc00;
+}
