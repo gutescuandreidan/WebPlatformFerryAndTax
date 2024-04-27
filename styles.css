@@ -1,0 +1,56 @@
+html, body {
+    height: 100%;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background-image: url('poze/FerryBoat.png');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    font-family: sans-serif;
+    color: black;
+}
+
+.container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-bottom: 30px;
+    margin-top: 20px;
+    background-color: white;
+    height:80px;
+   
+
+}
+
+.taxe {
+    font-size: 25px;
+    margin-top: 40px;
+
+}
+ 
+.taxe i {
+    font-size: 24px; /* Set the size of the icon */
+    color: blue; /* Set the color of the icon */
+    margin-left: 5px; /* Add some space between the icon and the text */
+}
+
+
+#taxe-de-drum {
+    color: blue;
+    margin-left: auto;
+    margin-right: 20px;
+}
+
+#taxe-de-pod {
+    color: blue;
+    margin-left: 20px;
+    margin-right: 100px;
+}
+#bilete-feribot {
+    color: blue;
+    margin-left: 120px;
+    font-size:35px;
+}
