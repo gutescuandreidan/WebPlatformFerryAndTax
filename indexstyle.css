@@ -11,8 +11,8 @@ body {
   margin-top: 4rem;
   background-color: white;
   box-shadow: 0 2px 4px black;
-  padding-top: 0.75rem; /* Add padding to the top of the navbar */
-  padding-bottom: 0.75rem; /* Add padding to the bottom of the navbar */
+  padding-top: 0.75rem;
+  padding-bottom: 0.75rem;
 }
 
 .navbar-brand {
@@ -30,21 +30,21 @@ body {
   cursor: pointer;
 }
 .fa-ferry {
-  color: blue; /* ferry icon */
+  color: blue;
 }
 
 .navbar-toggler::after {
-  content: "Alte servicii"; /* Add content "Alte servicii" after the toggler button */
-  position: absolute; /* Position the content */
-  top: 100%; /* Place the content below the toggler button */
-  right: 10%; /* Center the content horizontally */
-  background-color: #fff; /* Background color of the content */
-  padding: 0.5rem; /* Padding around the content */
-  border-radius: 0.25rem; /* Border radius of the content */
-  display: none; /* Initially hide the content */
+  content: "Alte servicii";
+  position: absolute;
+  top: 100%;
+  right: 10%;
+  background-color: #fff;
+  padding: 0.5rem;
+  border-radius: 0.25rem;
+  display: none;
   border: 2px solid black;
 }
 
 .navbar-toggler:hover::after {
-  display: block; /* Display the content when hovering over the toggler button */
+  display: block;
 }

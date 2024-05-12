@@ -126,7 +126,7 @@
 </div>
 <div class="container mt-3">
   <div class="row">
-      <!-- Selecteaza perioada de valabilitate -->
+      <!-- Valabilitate -->
       <div class="col-md-6">
           <h3 class="display-6 fw-normal text-white">Selecteaza perioada de valabilitate</h3>
           <div class="form-check mb-4 text-start">
@@ -163,7 +163,7 @@
           </div>
       </div>
 
-      <!-- Selecteaza data inceperii -->
+      <!-- Data -->
       <div class="col-md-6">
           <h3 class="display-6 fw-normal text-white">Selecteaza data inceperii</h3>
           <div class="col-md-6">
@@ -175,6 +175,27 @@
               required
             />
           </div>
+          <h3 class="display-6 fw-normal text-white mt-3">Completeaza datele masinii</h3>
+          <div class="container mt-3">
+            <div class="row">
+                <!-- drop-down - semn stat -->
+                <div class="col-md-6 mb-3">
+                    <label for="countrySelect" class="form-label text-white">Semn stat</label>
+                    <select class="form-select" id="countrySelect">
+                        <option selected>Alege un stat</option>
+                        <option value="romania">România</option>
+                        <option value="TBC">To be continued</option>
+                    </select>
+                </div>
+        
+                <!-- Numar inmatriculare -->
+                <div class="col-md-6 mb-3">
+                    <label for="licenseNumber" class="form-label text-white">Nr inmatriculare</label>
+                    <input type="text" class="form-control" id="licenseNumber" placeholder="Introduce numarul de inmatriculare">
+                </div>
+            </div>
+        </div>
+        
       </div>
   </div>
   <div class="row">

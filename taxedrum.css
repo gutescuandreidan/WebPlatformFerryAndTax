@@ -8,19 +8,18 @@ body {
 }
 .option-container {
   padding: 4px;
-  background-color: #f8f9fa; /* Light gray background */
-  border: 1px solid #ccc; /* Gray border */
-  border-radius: 8px; /* Rounded edges */
-  margin-bottom: 10px; /* Spacing between options */
+  background-color: #f8f9fa;
+  border: 1px solid #ccc;
+  margin-bottom: 10px;
   display: flex;
   align-items: center;
   justify-content: space-between;
   margin-left: 10px;
 }
 .option-container label {
-  width: 100%; /* Full width to center text */
-  margin-left: 10px; /* Space between radio button and text */
-  text-align: center; /* Align text to the left */
+  width: 100%;
+  margin-left: 10px;
+  text-align: center;
 }
 .price-tag {
   font-size: 0.8rem;
