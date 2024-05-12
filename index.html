@@ -63,23 +63,25 @@
       <form>
         <div class="row g-3">
           <div class="col-md-6">
-            <label for="fromPort" class="form-label">From</label>
+            <label for="fromPort" class="form-label">De la</label>
             <select class="form-select" id="fromPort" required>
-              <option selected disabled value="">Select Departure Port</option>
-              <!-- Dynamically add options here -->
-            </select>
-          </div>
-          <div class="col-md-6">
-            <label for="toPort" class="form-label">To</label>
-            <select class="form-select" id="toPort" required>
               <option selected disabled value="">
-                Select Destination Port
+                Selectati Portul de Plecare
               </option>
               <!-- Dynamically add options here -->
             </select>
           </div>
           <div class="col-md-6">
-            <label for="departureDate" class="form-label">Departure</label>
+            <label for="toPort" class="form-label">La</label>
+            <select class="form-select" id="toPort" required>
+              <option selected disabled value="">
+                Selectati Portul Destinatiei
+              </option>
+              <!-- Dynamically add options here -->
+            </select>
+          </div>
+          <div class="col-md-6">
+            <label for="departureDate" class="form-label">Plecare</label>
             <input
               type="date"
               class="form-control"
@@ -88,11 +90,11 @@
             />
           </div>
           <div class="col-md-6">
-            <label for="returnDate" class="form-label">Return</label>
+            <label for="returnDate" class="form-label">Intoarcere</label>
             <input type="date" class="form-control" id="returnDate" required />
           </div>
           <div class="col-md-6">
-            <label for="passengers" class="form-label">Passengers</label>
+            <label for="passengers" class="form-label">Pasageri</label>
             <input
               type="number"
               class="form-control"
@@ -101,12 +103,12 @@
             />
           </div>
           <div class="col-md-6">
-            <label for="vehicles" class="form-label">Vehicles</label>
+            <label for="vehicles" class="form-label">Autovehicule</label>
             <input type="number" class="form-control" id="vehicles" required />
           </div>
         </div>
         <div class="d-grid gap-2 mt-3">
-          <button class="btn btn-primary" type="submit">Search</button>
+          <button class="btn btn-primary" type="submit">Cautare</button>
         </div>
       </form>
     </div>
