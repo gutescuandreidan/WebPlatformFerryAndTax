@@ -1,0 +1,27 @@
+body {
+  background-image: url("poze/drum2.jp");
+  background-size: cover;
+  background-repeat: no-repeat;
+  margin: 0;
+  padding: 0;
+  height: 100%;
+}
+.option-container {
+  padding: 4px;
+  background-color: #f8f9fa;
+  border: 1px solid #ccc;
+  margin-bottom: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-left: 10px;
+}
+.option-container label {
+  width: 100%;
+  margin-left: 10px;
+  text-align: center;
+}
+.price-tag {
+  font-size: 0.8rem;
+  color: #666;
+}

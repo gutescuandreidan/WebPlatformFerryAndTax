@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="en">
+    <!DOCTYPE html>
+    <html lang="en">
+      <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Taxe de drum</title>
+        <link
+          href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
+          rel="stylesheet"
+          integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH"
+          crossorigin="anonymous"
+        />
+        <link rel="stylesheet" href="taxedrumplata.css" />
+        <!-- Link to the external CSS file -->
+        <script
+          src="https://kit.fontawesome.com/465cf55078.js"
+          crossorigin="anonymous"
+        ></script>
+        <style>
+            body{
+            font-family: sans-serif;
+            }
+        </style>
+<body>
+  <header class="text-center py-3 mt-2 bg-rgb">
+      <h1 class="display-6 text-black">Achizitionare Rovinieta</h1>
+  </header>
+  <div class ="container mt-3 bg col-md-12 ">
+     
+<div class="container mt-3">
+  <div class="row">
+      <!-- Valabilitate -->
+       
+      <div class="container mt-5">
+        <p>
+            Ai deja un cont?
+            <button type="button" class="btn btn-primary btn-sm" style="margin-left: 10px;">Intra in cont</button>
+          </p>
+        <!-- Detalii Client -->
+        <h3 class="mb-3">1.Detalii Client</h3>
+
+        <form>
+          <div class="row mb-3">
+            <div class="col-md-3">
+                <label for="clientLastName" class="form-label">Nume*</label>
+                <input type="text" class="form-control" id="clientLastName" placeholder="Introduceți numele">
+              </div>
+            <div class="col-md-3">
+              <label for="clientFirstName" class="form-label">Prenume*</label>
+              <input type="text" class="form-control" id="clientFirstName" placeholder="Introduceți prenumele">
+            </div>
+           
+          
+          <div class="col-md-3">
+            <label for="clientEmail" class="form-label">Email*</label>
+            <input type="email" class="form-control" id="clientEmail" placeholder="Introduceți email-ul">
+          </div>
+          <div class="col-md-3">
+            <label for="clientPhone" class="form-label">Telefon*</label>
+            <input type="tel" class="form-control" id="clientPhone" placeholder="Introduceți numărul de telefon">
+          </div>
+        </div>
+        </form>
+    
+        <!-- Adresa Facturare -->
+        <h3 class="mb-3 mt-3">2.Adresa Facturare</h3>
+        <form>
+            <div class="row mb-3">
+                <div class="col-md-3">
+                  <label for="billingCountry" class="form-label">Țară*</label>
+                  <select class="form-select" id="billingCountry">
+                    <option selected>Alegeți țara</option>
+                  </select>
+                </div>
+                <div class="col-md-3">
+                  <label for="billingCounty" class="form-label">Județ*</label>
+                  <select class="form-select" id="billingCounty">
+                    <option selected>Alegeți județul</option>
+                    <option value="Bucharest">București</option>
+                    <option value="Ilfov">Ilfov</option>
+                    <option value="Cluj">Cluj</option>
+                    <!-- Add other counties here -->
+                  </select>
+                </div>
+                <div class="col-md-3">
+                  <label for="billingCity" class="form-label">Localitate*</label>
+                  <select class="form-select" id="billingCity">
+                    <option selected>Alegeți localitatea</option>
+                    <!-- Populate cities based on selected county -->
+                  </select>
+                </div>
+                <div class="col-md-3">
+                  <label for="billingStreet" class="form-label">Strada*</label>
+                  <input type="text" class="form-control" id="billingStreet" placeholder="Introduceți strada">
+                </div>
+                <div class="col-md-3 mt-2">
+                  <label for="billingNumber" class="form-label">Număr*</label>
+                  <input type="text" class="form-control" id="billingNumber" placeholder="Introduceți numărul">
+                </div>
+                <div class="col-md-3 mt-2">
+                  <label for="billingBlock" class="form-label">Bloc</label>
+                  <input type="text" class="form-control" id="billingBlock" placeholder="Introduceți blocul">
+                </div>
+                <div class="col-md-3 mt-2">
+                  <label for="billingStaircase" class="form-label">Scară</label>
+                  <input type="text" class="form-control" id="billingStaircase" placeholder="Introduceți scara">
+                </div>
+                <div class="col-md-3 mt-2">
+                  <label for="billingApartment" class="form-label">Apartament</label>
+                  <input type="text" class="form-control" id="billingApartment" placeholder="Introduceți apartamentul">
+                </div>
+              </div>
+        </form>
+    
+        <!-- Metoda Plata -->
+        <h3 class="mb-4 mt-5">3.Metoda Plata</h3>
+        <form>
+          <div class="form-check mb-3">
+            <input class="form-check-input" type="radio" name="paymentMethod" id="cardPayment" value="card">
+            <label class="form-check-label" for="cardPayment">
+              Card de credit/debit
+            </label>
+          </div>
+        </form>
+      </div>
+
+      <!-- Data -->
+      <div class="col-md-6">
+          <h3 class="display-6 fw-normal text-white">3.Metoda de plata</h3>
+        
+      </div>
+  </div>
+  <div class="row">
+    <div class="col-12 text-center">
+  <a class="btn btn-dark mb-2" href="#" role="button">Plaseaza comanda</a>
+  </div>
+</div>
+</div>
+<script src="taxedrumplataApi.js"></script>
+ <!-- divurile de jos degeaba cred -->
+</div>
+</div>
+</body>
+    
+
+        <!-- Bootstrap Bundle with Popper -->
+        <script
+        src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js"
+        integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r"
+        crossorigin="anonymous"
+      ></script>
+      <script
+        src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.min.js"
+        integrity="sha384-0pUGZvbkm6XF6gxjEnlmuGrJXVbNuzT9qBBavbLwCsOGabYfZo0T0to5eqruptLy"
+        crossorigin="anonymous"
+      ></script>
+    <!--car: <i class="fa-solid fa-car-side"></i> -->
+    <!--truck: <i class="fa-solid fa-truck"></i> -->
+    <!--bus: <i class="fa-solid fa-bus"></i> -->
+    <!--van: <i class="fa-solid fa-van-shuttle"></i> -->
+    <!--car: <i class="fa-solid fa-car-side"></i> -->
+    <!--car: <i class="fa-solid fa-car-side"></i> -->
+
+    
+</body>
+</html>
