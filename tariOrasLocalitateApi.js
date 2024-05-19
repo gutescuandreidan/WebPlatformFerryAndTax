@@ -2,7 +2,6 @@ document.addEventListener("DOMContentLoaded", () => {
   const ACCESS_TOKEN =
     "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyIjp7InVzZXJfZW1haWwiOiJhbmRyZWlndXRlc2N1MjFAZ21haWwuY29tIiwiYXBpX3Rva2VuIjoibUpWZGZyYzl4MEx6azJYLXhFOXQ0dzVtc2Q3SUl1U1hveHB5a0VYLTdvY0IxOU52Z01VcmRBeVBBRVpFSy1WS0cxVSJ9LCJleHAiOjE3MTYxNDY2NTF9.EZFogR8m6KgX2yUHBUY-d2Qwo1NIvRoPVjlYSzQNSCg"; // Replace with your actual access token
 
-  // Function to populate countries
   function populateCountries() {
     fetch("https://restcountries.com/v3.1/all")
       .then((response) => response.json())
@@ -30,7 +29,6 @@ document.addEventListener("DOMContentLoaded", () => {
       .catch((error) => console.error("Error fetching country data:", error));
   }
 
-  // Function to populate counties
   function populateCounties(countryName) {
     console.log(`Fetching counties for country: ${countryName}`);
     fetch(`https://www.universal-tutorial.com/api/states/${countryName}`, {
@@ -75,7 +73,6 @@ document.addEventListener("DOMContentLoaded", () => {
       .catch((error) => console.error("Error fetching county data:", error));
   }
 
-  // Function to populate cities
   function populateCities(countyName) {
     console.log(`Fetching cities for county: ${countyName}`);
     fetch(`https://www.universal-tutorial.com/api/cities/${countyName}`, {
@@ -110,7 +107,6 @@ document.addEventListener("DOMContentLoaded", () => {
       .catch((error) => console.error("Error fetching city data:", error));
   }
 
-  // Function to populate sectors for Bucuresti
   function sectors() {
     console.log("Sectors for Bucuresti");
     const sectors = [
@@ -131,7 +127,6 @@ document.addEventListener("DOMContentLoaded", () => {
     });
   }
 
-  // Function to clear dropdown
   function clearDropdown(elementId) {
     const dropdown = document.getElementById(elementId);
     while (dropdown.firstChild) {
@@ -143,6 +138,5 @@ document.addEventListener("DOMContentLoaded", () => {
     dropdown.appendChild(defaultOption);
   }
 
-  // Initialize the process
   populateCountries();
 });

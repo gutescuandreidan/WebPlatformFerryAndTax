@@ -4,14 +4,12 @@ document.addEventListener("DOMContentLoaded", () => {
     .then((data) => {
       const billingCountry = document.getElementById("billingCountry");
 
-      // Sort the data alphabetically by country name using localeCompare with Romanian locale
       const sortedData = data.sort((a, b) =>
         a.name.common.localeCompare(b.name.common, "ro", {
           sensitivity: "base",
         })
       );
 
-      // Create and append option elements for each country
       sortedData.forEach((country) => {
         const option = document.createElement("option");
         option.value = country.name.common;
@@ -20,4 +18,19 @@ document.addEventListener("DOMContentLoaded", () => {
       });
     })
     .catch((error) => console.error("Error fetching country data:", error));
+});
+
+document.addEventListener("DOMContentLoaded", function () {
+  const togglePassword = document.getElementById("togglePassword");
+  const passwordInput = document.getElementById("clientPassword");
+  const togglePasswordIcon = document.getElementById("togglePasswordIcon");
+
+  togglePassword.addEventListener("click", function () {
+    const type =
+      passwordInput.getAttribute("type") === "password" ? "text" : "password";
+    passwordInput.setAttribute("type", type);
+
+    togglePasswordIcon.classList.toggle("fa-eye");
+    togglePasswordIcon.classList.toggle("fa-eye-slash");
+  });
 });
